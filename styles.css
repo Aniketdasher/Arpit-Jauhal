@@ -1,0 +1,631 @@
+/*initialising*/
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;    
+
+}
+
+@font-face {
+
+    font-family: 'default';
+    src: url('fonts/Larken\ Light.ttf')
+         format('truetype');
+
+}
+
+::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+#particles-js{
+
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:#1f3b2c;
+    transition:all 1.1s;
+    z-index: 3;
+    overflow: hidden;
+    
+}
+
+.particleContent{
+
+    position:absolute;
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#mover button{
+
+    width:10rem;
+    height:10rem;
+    border:#e5e5e5 solid 2px;
+    border-radius: 50%;
+    background:#1f3b2c;
+    color:#e5e5e5;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    transition:all 0.4s;
+
+}
+
+#mover button:hover{
+
+    background:#588068;
+
+}
+
+main{
+
+    background-color:#588068;
+    overflow-y: hidden;
+
+}
+
+.landing{
+
+    height:100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-attachment: fixed;
+    transition:2s all;
+
+}
+
+.landing nav{
+
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:15vh;
+    width:30%;
+
+}
+
+nav a{
+
+    text-decoration: none;
+    color:white;
+    font-size: 1.125rem;
+    transition:all 0.2s ease-in;
+
+}
+
+nav a:hover{
+
+    color:#E6B489;
+
+}
+
+
+
+#introSvg{
+
+    right:0;
+    top:4rem;
+
+}
+
+#smallerBub{
+
+    position: absolute;
+    right:4rem;
+    top:2rem;
+
+}
+
+.introArea{
+
+    height:85vh;
+    width:100%;
+    padding:4.3rem;
+    color:#ececec;
+
+}
+
+.introArea h1,h2,h3{
+
+    position: absolute;
+    left:5rem;
+    font-family: 'default';
+    letter-spacing: 0.05rem;
+    z-index: 1;
+
+}
+
+.introArea h1{
+
+    top:12rem;
+    letter-spacing: 0.3rem;
+    font-size: 1.125rem;
+    font-family: 'default';
+    
+}
+
+.introArea h2{
+
+    top:16rem;
+    font-size: 4.375rem;
+
+}
+
+.introArea h3{
+
+    top:23rem;
+    font-size: 1.7rem;
+    list-style:2.45rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 100;
+
+}
+
+.introArea h3 span{
+
+    display: block;
+
+}
+
+.cvButton{
+
+    position:absolute;
+    left:5rem;
+    top:33rem;
+    width:10rem;
+    height:8rem;
+    cursor: pointer;
+
+}
+
+.cvButton button{
+
+    width:7rem;
+    height:3rem;
+    border-radius: 30px;
+    font-size: 1.8rem;
+    background-color:transparent;
+    cursor: pointer;
+    color:#ececec;
+    transition: all 0.2s ease-in;
+    font-weight: 700;
+    border:#ececec 2px solid;
+    transition:all 0.2s;  
+    font-family: 'Space Mono', monospace;
+    font-weight: 100;
+
+}
+
+.cvButton button:hover{
+
+    width:8rem;
+
+}
+
+.skillSvg{
+
+    width:auto;
+    height:9rem;
+    color:#ececec;
+    transform:translateX(5rem);
+    
+}
+
+#about{
+
+    height:100vh;
+    width:100%;
+    padding:4rem 3rem;
+    font-family: 'Space Mono', monospace;
+    background-color:#588068;
+    display:flex;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+
+.aboutrule{
+    
+    height:13rem;
+    position:absolute;
+    left: 9.5rem;
+
+}
+
+.aboutwriting{
+
+    position:absolute;
+    left:13rem;
+    top:56.5rem;
+    font-size:2rem;
+    padding:1rem;
+    overflow: hidden;
+
+}
+
+.aboutwriting p{
+
+    margin:0.5rem;
+    color:#c1c4a6;
+    transition:all 0.2s;
+    cursor:pointer;
+    font-weight:100;
+
+}
+.aboutwriting p:hover{
+
+    color:#E6B489;
+
+}
+
+#work{
+
+    min-height: 120vh;  
+    font-family: 'default';
+    background-color: #588068;
+
+}
+
+.workSvg{
+
+    width:auto;
+    height:9rem;
+    color:#ececec;
+    top:21;
+    position: absolute;
+
+}   
+
+.container{
+
+    width:100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-gap:2.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-top:18rem;
+
+}
+
+.container .card{
+
+    position: relative;
+    width: 400px;
+    height: 250px;
+    margin:1rem 2.5rem;
+    transition: 0.5s;
+    border-radius:2px;
+
+}
+
+.card .previewImage{
+
+    width: 410px;
+    height: 270px;
+    overflow: hidden;
+    transform:translateY(10px);
+
+}
+
+.container .card:hover{
+
+    box-shadow: 0 30px 50px rgba(0,0,0,.2);
+
+}
+
+.container .card .face{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .card .face.face1{
+
+    box-sizing: border-box;
+    text-align: center;
+    background: none;
+    color: #1f3b2c;
+    overflow: hidden;
+
+}
+
+.container .card .face.face1 a{
+
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #1f3b2c;
+    border:2px solid #1f3b2c;
+    transition:border 0.5s;
+
+}
+
+.container .card .face.face1 a:hover{
+
+    color:#fff;
+    background: #1f3b2c;
+
+}
+
+.container .card .face.face2{
+
+    background:rgb(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+    transition: 0.5s;
+
+}
+
+.container .card:hover .face.face2{
+
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border:2px solid #1f3b2c;
+
+}
+
+.container .card .face.face2 h2{
+
+    margin: 20px;
+    padding: 0;
+    font-size: 1.5rem;
+    color: #fff;
+    transform:translateX(-10%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 100;
+    text-transform: uppercase;
+
+}
+
+.container .card:hover .face.face2 h2{
+
+    color: #1f3b2c;
+    font-size: 2rem;
+    
+}
+
+.modal{
+
+    background-color:black;
+    opacity: 0;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:scroll;
+    pointer-events: none;
+    z-index: 5;
+    transition:all 0.7s;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.modal.open{
+
+    opacity:1;
+    pointer-events: all;
+
+}
+
+.modal p{
+
+    color:white;
+    position:fixed;
+    font-size:1.2rem;
+    bottom:50%;
+    left:10%;
+    transform:translate(-50%,-5%)
+              rotate(-90deg);
+
+    text-transform: uppercase;
+}
+
+.modal .closinginfo{
+
+    color:white;
+    font-weight: 100;
+    position:fixed;
+    font-size: 1rem;
+    bottom:50%;
+    right:10%;
+    transform:  translate(50%,5%)
+                rotate(90deg);
+
+}
+
+.full-img{
+
+    position:absolute;
+    min-height: 100%;
+    top:0;
+    left:50%;
+    width:100%;
+    vertical-align: top;
+    transform: translate(-50%,-25%)
+                scale(0.5);
+    transition: all 0.7s;
+                
+}
+
+.full-img.open{
+
+    transform:translate(-50%,-15%)
+              scale(0.7);
+
+}
+
+#contact {
+
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    overflow-y: hidden;
+    font-family: 'default';
+
+}
+
+.contact h1{
+
+    text-align:end;
+    color:#ececec;
+    font-size:2rem;
+
+}
+
+.contact #bigText{
+
+    font-size: 11rem;
+    color:#c1c4a6;
+
+}
+
+.credentials a{
+
+    display:block;
+    font-size: 5rem;
+    text-decoration: none;
+    color:#c1c4a6;
+    padding:1.2rem;
+    transition:all 0.3s;
+    
+}
+
+.credentials a:hover{
+
+    transform:scale(1.2);
+    color:#e5e5e5;
+
+}   
+
+@media screen and (max-width:768px){
+
+    body{
+
+        overflow-x: hidden;
+
+    }
+
+    .svg{
+
+        display: none;
+        
+    }
+    .skillSvg{
+
+        height: 5rem;
+
+    }
+    .workSvg{
+        height: 5rem;
+    }
+
+    .introArea{
+
+        height:85vh;
+        width:100%;
+        padding:4.3rem;
+        color:white;
+    
+    }
+
+    .rectangle{
+
+        display: none;
+
+    }
+    
+    .introArea h1,h2,h3{
+    
+        position: absolute;
+        font-weight: 100;
+        left:5rem;
+    
+    }
+    
+    .introArea h1{
+    
+        top:4rem;
+        letter-spacing: 0;
+        font-size: 1rem;
+    
+    }
+    
+    .introArea h2{
+    
+        top:5.5rem;
+        font-size: 4rem;
+    
+    }
+    
+    .introArea h3{
+    
+        top:16rem;
+        font-size: 1.5rem;
+        list-style:2.45rem;
+    
+    }
+    
+    .introArea h3 span{
+    
+        display: block;
+    
+    }
+    .aboutwriting{
+
+        font-size: 1rem;
+    }
+
+    #contact{
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #contact #bigText{
+
+        font-size: 6rem;
+        
+    }
+
+     #contact .credentials{
+
+         display:flex;
+
+     }
+
+}
+
+
+
+
+
+
+
+
+
