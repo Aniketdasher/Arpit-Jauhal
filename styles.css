@@ -368,8 +368,7 @@ nav a:hover{
 
 .container .card .face.face2{
 
-    background:rgb(0,0,0,0.6);
-    backdrop-filter: blur(5px);
+    background:rgb(0,0,0,0.7);
     transition: 0.5s;
 
 }
