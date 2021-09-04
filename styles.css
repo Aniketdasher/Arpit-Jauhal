@@ -87,10 +87,10 @@ main{
 .landing nav{
 
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height:15vh;
-    width:30%;
+    width:20%;
 
 }
 
