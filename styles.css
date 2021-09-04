@@ -228,25 +228,21 @@ nav a:hover{
     padding:4rem 3rem;
     font-family: 'Space Mono', monospace;
     background-color:#588068;
-    display:flex;
-    justify-content: space-around;
     overflow: hidden;
+    display: flex;
 
 }
 
 .aboutrule{
     
     height:13rem;
-    position:absolute;
-    left: 9.5rem;
+    position: relative;
+    transform:translateX(-3.5rem);
 
 }
 
 .aboutwriting{
 
-    position:absolute;
-    left:13rem;
-    top:56.5rem;
     font-size:2rem;
     padding:1rem;
     overflow: hidden;
@@ -270,7 +266,7 @@ nav a:hover{
 
 #work{
 
-    min-height: 120vh;  
+    min-height:100vh;  
     font-family: 'default';
     background-color: #588068;
 
@@ -278,11 +274,7 @@ nav a:hover{
 
 .workSvg{
 
-    width:auto;
-    height:9rem;
-    color:#ececec;
-    top:21;
-    position: absolute;
+    margin-left:5rem;
 
 }   
 
@@ -290,28 +282,27 @@ nav a:hover{
 
     width:100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    grid-gap:2.5rem;
-    margin-left: .5rem;
-    margin-right: .5rem;
-    margin-top:18rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap:1rem;
+    margin-top:5rem;
+    padding:0 5rem;
 
 }
 
 .container .card{
 
     position: relative;
-    width: 400px;
-    height: 250px;
-    margin:1rem 2.5rem;
-    transition: 0.5s;
-    border-radius:2px;
+    width:400px;
+    height:250px;
+    margin:1rem;
+    transition:all 0.5s;
+    border-radius:5px;
 
 }
 
 .card .previewImage{
 
-    width: 410px;
+    width: 400px;
     height: 270px;
     overflow: hidden;
     transform:translateY(10px);
@@ -524,100 +515,8 @@ nav a:hover{
 @media screen and (max-width:768px){
 
     body{
-
-        overflow-x: hidden;
-
+        display:none;
     }
-
-    .svg{
-
-        display: none;
-        
-    }
-    .skillSvg{
-
-        height: 5rem;
-
-    }
-    .workSvg{
-        height: 5rem;
-    }
-
-    .introArea{
-
-        height:85vh;
-        width:100%;
-        padding:4.3rem;
-        color:white;
-    
-    }
-
-    .rectangle{
-
-        display: none;
-
-    }
-    
-    .introArea h1,h2,h3{
-    
-        position: absolute;
-        font-weight: 100;
-        left:5rem;
-    
-    }
-    
-    .introArea h1{
-    
-        top:4rem;
-        letter-spacing: 0;
-        font-size: 1rem;
-    
-    }
-    
-    .introArea h2{
-    
-        top:5.5rem;
-        font-size: 4rem;
-    
-    }
-    
-    .introArea h3{
-    
-        top:16rem;
-        font-size: 1.5rem;
-        list-style:2.45rem;
-    
-    }
-    
-    .introArea h3 span{
-    
-        display: block;
-    
-    }
-    .aboutwriting{
-
-        font-size: 1rem;
-    }
-
-    #contact{
-
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    #contact #bigText{
-
-        font-size: 6rem;
-        
-    }
-
-     #contact .credentials{
-
-         display:flex;
-
-     }
-
 }
 
 
