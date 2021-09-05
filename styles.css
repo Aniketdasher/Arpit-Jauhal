@@ -462,10 +462,17 @@
 
     .contact h1{
 
-        text-align:end;
+        text-align: end;
+
+    }
+
+    .contact h1 a{
+        
+        text-decoration:none;
         color:#ececec;
         font-size:2rem;
-
+        font-weight: 700;
+        
     }
 
     .contact #bigText{
@@ -557,14 +564,7 @@
 
 
         }
-
+        
     }
-
-
-
-
-
-
-
 
 
