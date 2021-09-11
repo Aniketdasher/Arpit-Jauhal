@@ -96,6 +96,36 @@
 
     }
 
+    .introArea{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height:65vh;
+        
+    } 
+
+    .introArea .writing{
+
+        font-family: 'default';
+        color: #ececec; 
+        width:50%;
+
+    }
+
+    .writing span{
+        display: block;
+    }
+
+    .writing h1{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .writing h2{
+        font-size: 1.8rem;
+        font-weight: 300;
+        
+    }
 
     nav a{
 
@@ -112,78 +142,13 @@
 
     }
 
-    .introArea{
-
-        height:100vh;
-        width:100%;
-        color:#ececec;
-        overflow: hidden;
-
-    }
-
-    .introArea h1,h2,h3{
-
-        position: absolute;
-        left:5rem;
-        font-family: 'default';
-        letter-spacing: 0.05rem;
-        z-index: 1;
-
-    }
-
-    .introArea h1{
-
-        top:12rem;
-        letter-spacing: 0.3rem;
-        font-size: 1.125rem;
-        font-family: 'default';
-        
-    }
-
-    .introArea h2{
-
-        top:16rem;
-        font-size: 4.375rem;
-
-    }
-
-    .introArea h3{
-
-        top:23rem;
-        font-size: 1.5rem;
-        list-style:2.45rem;
-        font-family: 'Manrope', sans-serif;
-        font-weight: 100;
-
-    }
-
-    .introArea h3 span{
-
-        display: block;
-
-    }
-
-    .picture{
-
-        position: absolute;
-        left:65%;
-        top:24%;
-
-    }
-
-    .picture img{
-
-        width:20rem;
-
-    }
-
     .cvButton{
 
         cursor: pointer;
         width:8rem;
         height:4rem;
-        transform:translate(5rem, 25rem);
-
+        margin-left: 5rem;
+        
     }
 
     .cvButton button{
@@ -213,7 +178,7 @@
     .skillSvg{
 
         width:auto;
-        height:9rem;
+        height:7rem;
         color:#ececec;
         transform:translateX(5rem);
         
@@ -379,12 +344,12 @@
 
         margin: 20px;
         padding: 0;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: #fff;
-        transform:translateX(-10%);
         font-family: 'Space Mono', monospace;
         font-weight: 100;
         text-transform: uppercase;
+        text-align: center;
 
     }
 
@@ -392,7 +357,7 @@
 
         color: #1f3b2c;
         font-size: 2rem;
-        
+        transform:translateX(100px);
     }
 
     .modal{
@@ -544,6 +509,34 @@
         display:none;
         pointer-events: none;
         font-family: 'Space Mono', monospace;
+
+    }
+
+    @media only screen and (min-width:1900px){
+
+        .landing nav a{
+
+            font-size: 2rem;
+
+        }
+
+        .aboutwriting p{
+
+            font-size:3rem ;
+
+        }
+
+        .introArea .writing h1{
+
+            font-size: 5rem;
+
+        }
+
+        .introArea .writing h2{
+
+            font-size: 3rem;
+
+        }
 
     }
 
