@@ -100,7 +100,7 @@
 
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content:space-between ;
         height:65vh;
         
     } 
@@ -110,6 +110,7 @@
         font-family: 'default';
         color: #ececec; 
         width:50%;
+        margin-left: 5rem;
 
     }
 
@@ -125,6 +126,12 @@
         font-size: 1.8rem;
         font-weight: 300;
         
+    }
+
+    .picture{
+
+        margin-right: 15rem;
+
     }
 
     nav a{
@@ -193,14 +200,6 @@
         background-color:#588068;
         overflow: hidden;
         display: flex;
-
-    }
-
-    .aboutrule{
-        
-        height:13rem;
-        position: relative;
-        transform:translateX(-3.5rem);
 
     }
 
